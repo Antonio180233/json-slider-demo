@@ -5,7 +5,7 @@ from sliderapp.models import Slider, SliderImage
 
 
 def demo(request):
-    """View for demo page."""
+    """View for demo page. this will be updated later, we want to use images slideshows to show it on screens, first step is to show a slide per page"""
 
     sliders = Slider.objects.all()
     return render(request, 'sliderapp/demo.html', {'sliders': sliders})
